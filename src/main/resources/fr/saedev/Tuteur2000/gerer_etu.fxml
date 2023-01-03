@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="519.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.saedev.Tuteur2000.GererEtuControler">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="281.0" prefWidth="203.0">
+               <children>
+                  <Label text=" " />
+                  <TextField fx:id="textAreaEtuSelectioner" onAction="#TextAreaEtuSelectioner" />
+                  <ListView fx:id="listEtudiant" prefHeight="273.0" prefWidth="187.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefHeight="281.0" prefWidth="320.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="22.0" prefWidth="194.0" text="Informations de l'étudiants" />
+            <VBox prefHeight="216.0" prefWidth="320.0">
+               <children>
+                  <HBox prefHeight="190.0" prefWidth="320.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="220.0" prefWidth="141.0">
+                           <children>
+                              <Label text="nom" />
+                              <TextField fx:id="textAreaName" />
+                              <Label text="Moyenne " />
+                              <TextField fx:id="textAreaMoyenne" />
+                              <Label text="Nombres d'absences" />
+                              <TextField fx:id="textAreaAbs" />
+                              <RadioButton fx:id="rdTuteur" mnemonicParsing="false" onAction="#rdTuteurAction" text="tuteur" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="224.0" prefWidth="47.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="114.0" text=" ">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="234.0" prefWidth="137.0">
+                           <children>
+                              <Label text="prénom" />
+                              <TextField fx:id="textAreaPrenom" prefHeight="25.0" prefWidth="149.0" />
+                              <Label text="Motivation 0-10" />
+                              <TextField fx:id="textAreaMotivation"/>
+                              <Label text="Année 1-3" />
+                              <TextField fx:id="textAreaAnnee"/>
+                              <RadioButton fx:id="rdTutore" mnemonicParsing="false" onAction="#rdTutoreAction" text="tutoré" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="320.0">
+               <children>
+                  <Button fx:id="BuSupprimer" mnemonicParsing="false" onAction="#BuSupprimer" prefHeight="25.0" prefWidth="92.0" text="Supprimer" />
+                  <Label text=" " />
+                  <Button fx:id="BuModifier" mnemonicParsing="false" onAction="#BuModifier" prefHeight="25.0" prefWidth="92.0" text="Modifier" />
+                  <Label text=" " />
+                  <Button fx:id="BuAjouter" mnemonicParsing="false" onAction="#BuAjouter" prefHeight="25.0" prefWidth="92.0" text="Ajouter" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="56.0" prefWidth="320.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="187.0" text=" " />
+                        <Button fx:id="BuRetour" mnemonicParsing="false" onAction="#BuRetour" prefHeight="25.0" prefWidth="95.0" text="Retour" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.saedev.Tuteur2000.MenuPrincipalControler">
+   <children>
+      <HBox prefHeight="38.0" prefWidth="535.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="40.0" text=" " />
+            <VBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="459.0">
+               <children>
+                  <Label alignment="CENTER" text="Menu principal">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="Affectation(s) enregistrée(s)" />
+               </children>
+            </VBox>
+            <Label prefHeight="17.0" prefWidth="40.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="253.0" prefWidth="535.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="110.0" text=" " />
+            <ListView fx:id="listAffectation" prefHeight="218.0" prefWidth="333.0" />
+            <Label prefHeight="17.0" prefWidth="110.0" text=" " />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="0.0" prefWidth="535.0">
+         <children>
+               <Button fx:id="buGererEtudiant" mnemonicParsing="false" onAction="#pressedButtonEtu" prefHeight="25.0" prefWidth="96.0" text="Gerer Etudiant" />
+            <Label prefHeight="17.0" prefWidth="24.0" text=" " />
+            <Button fx:id="buGererAffectations" mnemonicParsing="false" onAction="#pressedButtonAff" prefHeight="25.0" prefWidth="113.0" text="Gerer Affectations" />
+            <Label prefHeight="17.0" prefWidth="24.0" text=" " />
+            <Button fx:id="buActualiser" mnemonicParsing="false" onAction="#pressedButtonMAJ" prefHeight="25.0" prefWidth="96.0" text="Actualiser" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

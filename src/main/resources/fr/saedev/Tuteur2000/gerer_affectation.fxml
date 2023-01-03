@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.saedev.Tuteur2000.GererAffectationControler">
+   <children>
+      <VBox prefHeight="395.0" prefWidth="437.0">
+         <children>
+            <HBox prefHeight="283.0" prefWidth="322.0">
+               <children>
+                  <ListView fx:id="listG" prefHeight="200.0" prefWidth="200.0" />
+                  <ListView fx:id="listD" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="336.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="13.0" />
+                  <ChoiceBox fx:id="categorieCb" prefHeight="25.0" prefWidth="118.0" />
+                  <Label prefHeight="17.0" prefWidth="12.0" />
+                  <ChoiceBox fx:id="operateurCb" prefHeight="25.0" prefWidth="107.0" />
+                  <Label prefHeight="17.0" prefWidth="12.0" />
+                  <TextField fx:id="textFieldFiltre" prefHeight="25.0" prefWidth="123.0" />
+                  <Label prefHeight="17.0" prefWidth="17.0" text=" " />
+                  <Button fx:id="buOkFiltre" mnemonicParsing="false" onAction="#BuOkFiltre" prefHeight="25.0" prefWidth="40.0" text="OK" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="14.0" text=" " />
+                  <Button fx:id="buLancerAlgo" mnemonicParsing="false" onAction="#BuLancerAlgo" prefHeight="25.0" prefWidth="198.0" text="Lancer Algorithme Affectation" />
+                  <Label prefHeight="17.0" prefWidth="13.0" />
+                  <Button fx:id="buSpprAff" mnemonicParsing="false" onAction="#buSpprAff" prefHeight="25.0" prefWidth="176.0" text="Supprimer de son affectation" />
+                  <Label prefHeight="17.0" prefWidth="15.0" text=" " />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="395.0" prefWidth="169.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="29.0" prefWidth="132.0">
+               <children>
+                  <Label text="Filtre" />
+               </children>
+            </VBox>
+            <ListView fx:id="listFiltre" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="buSupprFiltre" mnemonicParsing="false" onAction="#BuSupprFiltre" prefHeight="25.0" prefWidth="146.0" text="Supprimer" />
+            <VBox alignment="BOTTOM_CENTER" prefHeight="141.0" prefWidth="132.0">
+               <children>
+                  <Button fx:id="buRetour" mnemonicParsing="false" onAction="#BuRetour" prefHeight="25.0" prefWidth="142.0" text="Retour" />
+                  <Button fx:id="buAjouter" mnemonicParsing="false" onAction="#BuAjouter" prefHeight="25.0" prefWidth="228.0" text="Ajouter" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
